@@ -75,6 +75,13 @@ body {
   justify-content: center;
 }
 
+.city {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
 .location {
   color: var(--white);
   text-align: center;
