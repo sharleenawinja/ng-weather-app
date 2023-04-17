@@ -3,8 +3,15 @@
     <img src="../assets/hot.jpeg" *ngIf="14 > 15" />
     <img src="../assets/cold.jpeg" *ngIf="14 <= 15" />
     <div class="weather-data">
-      <div class="location">Nairobi</div>
-      <div class="temperature">{{ 14.4 | number : "1.0-0" }}°C</div>
+      <input
+        type="text"
+        placeholder="search for a city"
+        class="city"
+        [(ngModel)]="city"
+      />
+      <button class="search-button" (click)="fetchWeatherData()">Search</button>
+      <div class="location">{{ conditions.location }}</div>
+      <div class="temperature">{{ conditions.temp }}°C</div>
     </div>
   </div>
   <div class="lower-data">
@@ -27,14 +34,14 @@
       <div class="info-block">
         <div class="info-block-label">
           <img src="../assets/humidity.jpg" alt="" />
-          <span>humidity</span>
+          <span>{{ conditions.humidity }}</span>
         </div>
         <div class="info-block-value">77%</div>
       </div>
       <div class="info-block">
         <div class="info-block-label">
           <img src="../assets/wind.jpeg" alt="" />
-          <span>wind speed</span>
+          <span>{{ conditions.wind }} </span>
         </div>
         <div class="info-block-value">11km/h</div>
       </div>

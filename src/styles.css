@@ -75,6 +75,20 @@ body {
   justify-content: center;
 }
 
+.city {
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.search-button {
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
 .location {
   color: var(--white);
   text-align: center;
